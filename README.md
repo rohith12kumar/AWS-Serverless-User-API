@@ -8,18 +8,21 @@ It allows users to send data via an API, processes it using Lambda, and stores i
 The goal was to understand real-world serverless architecture and API-driven backend systems.
 
 Architecture
-Amazon API Gateway → Handles HTTP requests
-AWS Lambda → Processes logic
-Amazon DynamoDB → Stores user data
+
+- Amazon API Gateway → Handles HTTP requests
+- AWS Lambda → Processes logic
+- Amazon DynamoDB → Stores user data
 
 What I Built
-Created a DynamoDB table (Users) with userId as partition key
-Developed a Lambda function (addUserFunction)
-Connected Lambda with DynamoDB using IAM permissions
-Built an HTTP API using API Gateway
-Created a POST /add-user route
-Tested API using Postman
-Verified data storage in DynamoDB
+
+
+- Created a DynamoDB table (Users) with userId as partition key
+- Developed a Lambda function (addUserFunction)
+- Connected Lambda with DynamoDB using IAM permissions
+- Built an HTTP API using API Gateway
+- Created a POST /add-user route
+- Tested API using Postman
+- Verified data storage in DynamoDB
 
 
 Screenshots & Explanation
@@ -94,12 +97,16 @@ Screenshots & Explanation
 
 
 <b>Key Learnings </b>
-How serverless architecture works in AWS
-API Gateway routing and HTTP methods
-Lambda function execution flow
-IAM roles and permissions in AWS
-DynamoDB as a NoSQL database
-End-to-end API debugging
+
+
+
+
+- How serverless architecture works in AWS
+- API Gateway routing and HTTP methods
+- Lambda function execution flow
+- I AM roles and permissions in AWS
+- DynamoDB as a NoSQL database
+- End-to-end API debugging
 
 
 Challenge Faced
@@ -113,24 +120,22 @@ Incorrect API route and misunderstanding of /dev stage usage
 
 Fix:
 
-Corrected endpoint to:
-
-/dev/add-user
+- Corrected endpoint to: /dev/add-user
 
 
 Cost Awareness
-Used only AWS Free Tier services
-No provisioned servers (fully serverless)
-No ongoing cost when idle
+- Used only AWS Free Tier services
+- No provisioned servers (fully serverless)
+- No ongoing cost when idle
 
 
 Future Improvements
-Add input validation in Lambda
-Add GET API to fetch users
-Add authentication using Cognito
-Deploy frontend UI for API
+- Add input validation in Lambda
+- Add GET API to fetch users
+- Add authentication using Cognito
+- Deploy frontend UI for API
 
 
-Summary
+<b>Summary</b>
 
 This project demonstrates a complete serverless backend pipeline from API request → processing → database storage.
